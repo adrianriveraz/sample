@@ -3,4 +3,24 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <version>1</version>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.pitest</groupId>
+          <artifactId>pitest-maven</artifactId>
+          <version>1.4.3-SNAPSHOT</version>
+          <configuration>
+            <mutators>
+              <mutator>CONDITIONALS_REPLACEMENT</mutator>
+              <mutator>ARITHMETIC_REPLACEMENT</mutator>
+              <mutator>ARITHMETIC_DELETION</mutator>
+            </mutators>
+            <failWhenNoMutations>false</failWhenNoMutations>
+            </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
