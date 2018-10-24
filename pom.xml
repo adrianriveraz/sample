@@ -20,6 +20,12 @@
           <artifactId>pitest-maven</artifactId>
           <version>1.4.3-SNAPSHOT</version>
           <configuration>
+            <targetClasses>
+              <param>com.mycompany.*</param>
+            </targetClasses>
+            <targetTests>
+              <param>com.mycompany.*</param>
+            </targetTests>
             <mutators>
               <mutator>CONDITIONALS_REPLACEMENT</mutator>
               <mutator>ARITHMETIC_REPLACEMENT</mutator>
