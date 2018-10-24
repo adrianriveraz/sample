@@ -1,74 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
 public class sampleTest {
+	private sample tester;
 
-    public static void main(String[] args) {
+	@Before
+	/** Fixture */
+	public void setUp() {
+		tester = new sample();
+	}
 
-        int a;
-        long b;
-        double c;
-        float d;
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
 
-        a = a + 1;
-        a = a * 1;
-        a = a - 1;
-        a = a / 1;
-        a = a % 1;
 
-        b = b + 1;
-        b = b * 1;
-        b = b - 1;
-        b = b / 1;
-        b = b % 1;
 
-        c = c + 1;
-        c = c * 1;
-        c = c - 1;
-        c = c / 1;
-        c = c % 1;
-
-        d = d + 1;
-        d = d * 1;
-        d = d - 1;
-        d = d / 1;
-        d = d % 1;
-        if (a == 1) {
-            a++;
-        }
-        if (a != 1) {
-            a++;
-        }
-        if (a > 1) {
-            a++;
-        }
-        if (a < 1) {
-            a++;
-        }
-        if (a >= 1) {
-            a++;
-        }
-        if (a <= 1) {
-            a++;
-        }
-        
-        if (a == 0) {
-            a++;
-        }
-        if (a != 0) {
-            a++;
-        }
-        if (a > 0) {
-            a++;
-        }
-        if (a < 0) {
-            a++;
-        }
-        if (a >= 0) {
-            a++;
-        }
-        if (a <= 0) {
-            a++;
-        }
-
-        System.out.println("Hello, World");
-    }
-
+	@Test /** Test */
+	public void testSample() {
+		sample.main(new String[] {"arg1", "arg2", "arg3"});
+	}
 }
